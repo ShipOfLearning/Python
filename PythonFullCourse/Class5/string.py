@@ -1,68 +1,78 @@
-## Reversing a String in Python
-str1 = "KiranKumar"
-print(str1[::-1])  # Reversed string
+## Methods of strings
+text = "hello, world!"
 
-## Slicing in Python Strings
-# string[start:end:step]
-str1 = "KiranKumar"
-# print(str1[0:5])    # Kiran
-# print(str1[5:10])   # Kumar
-# print(str1[:5])     # Kiran
-# print(str1[5:])     # Kumar
+# # Remove leading/trailing whitespace
+# print(text.strip())
 
-## Steps in Slicing
-# print(str1[::2])   # Kranua
-print(str1[::3])
+# # Convert to uppercase
+# print(text.upper())
 
-## Indexing in Python Strings
-str1 = "KiranKumar"
-# K i  r  a  n  K  u  m  a  r
-# 0 1  2  3  4  5  6  7  8  9
-#-10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+# # Convert to lowercase
+# print(text.lower())
 
-print(str1[0])    # K
-print(str1[4])    # n
+# # Replace substring
+# print(text.replace("World", "Python"))
 
-## String Operations in Python
-a = "Python"
-b = "Programming"
-print(a + " " + b)  # Concatenation
-print(a * 3)        # Repetition
-print("Py" in a)  # Membership
-print("Java" in a)  # Membership
+# # Split into a list
+# print(text.split(" "))
 
+# # Find substring position
+# print(text.find("World"))
 
+# # Check if string starts with a substring
+# print(text.startswith("  Hello"))
 
-## Different ways to declare string in python
-str1 = 'KiranKumar\'s'
-str2 = "KiranKumar Roy.\n\tToday is very \"beautiful\" day"
-str3 = ''' My name is KiranKumar 
-and we are learning python programming. my laptop's battry is draining fast.
-today is very "beautiful" day''' #Multi-line string
+# # Check if string ends with a substring
+# print(text.endswith("!  "))
 
-print(str1)
-print(str2) 
-print(str3)
+# # Count occurrences of a substring
+# print(text.count("l"))
 
-## Demonstrating various string methods in Python
+# # Join a list into a string
+# words = ["Python", "is", "fun"]
+# print(" ".join(words))
 
-str1 = "Hello, World World!"
-str2 = "pythonprogramming"
-str3 = "12345"
+# # Check if all characters are digits
+# num = "12345"
+# print(num.isdigit())
 
-print("Original:", str1,str2,str3)
-print("strip():", str1.strip())  # Removes whitespace from both ends
-print("lower():", str1.lower())  # Converts to lowercase
-print("upper():", str1.upper())  # Converts to uppercase
-print("replace():", str1.replace("World", "Python"))  # Replace substring
-print("split():", str1.split(" "))  # Split into list
-print("find():", str1.find("X"))  # Find substring index
-print("count():", str1.count("X"))  # Count occurrences
-print("startswith():", str1.startswith("He"))  # Check start
-print("endswith():", str1.endswith("!"))  # Check end
-print("capitalize():", str2.capitalize())  # Capitalize first letter
-print("title():", str2.title())  # Title case
-print("isdigit():", str3.isdigit())  # Check if all digits
-print("isalpha():", str2.isalpha())  # Check if all alphabetic (will be False due to space)
-print("join():", "-".join(["2025", "10", "28"]))  # Join list with separator
+# # Check if all characters are alphabetic
+# alpha = "Hello"
+# print(alpha.isalpha())
+
+# # Capitalize first character
+# print(text.capitalize())
+
+# # Title case
+# print(text.title())
+
+# ## Operations on Strings
+# a = "Hello"
+# b = "World"
+# print(a + " " + b)  # Hello World
+# print(a * 3)  # HelloHelloHello
+# print("He" in a)
+
+## Indexing and Slicing of Strings
+# str1 = "KiranKumar"
+# K i r a n K u m a r
+# 0 1 2 3 4 5 6 7 8 9
+# -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+# print(str1[::-1])  # ramuKnariK
+# print(str1[0:10:3])  # Kranur
+
+# str1 = "hellp worlds"
+# str2 = 'hello word this is with single quotes'
+# str3 = '''this is multilie string
+# with triple single quotes'''
+
+# print(str1)
+# print(str2)
+# print(str3)
+
+# str4 = 'this is very \'beautiful\' day. \n this is new line \t this is tab space'
+# print(str4)
+
+# str5 = r'this is raw string \n no new line \t no tab space'
+# print(str5)
 
