@@ -7,4 +7,3 @@ str = "Today is wonderfull day 1234_  "
 # print(f"the total no of words is {result}")
 result = len(re.findall(r"\w+",str))
 print(f"the total no of words is {result}")
-
