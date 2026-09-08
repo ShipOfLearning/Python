@@ -1,4 +1,4 @@
-## @ShipOfLearning (Day 36 of 100)
+## @ShipOfLearning (Day 37 of 100)
 ## Dictionary Comprehension
 
 marks = {"Aman": 30, "Riya": 88, "Kabir": 45}
