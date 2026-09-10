@@ -1,4 +1,4 @@
-## @ShipOfLearning (Day 40 of 100)
+## @ShipOfLearning (Day 41 of 100)
 ##  Nested if
 
 age = 24
